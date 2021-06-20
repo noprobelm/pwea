@@ -9,21 +9,26 @@ from rich.panel import Panel
 from pwea.key import KEY
 from pwea.WeatherCard import WeatherCard
 
-def get_weather(report_type = 'current', location = 'Warwick'):
+
+def get_weather(report_type='current', location='Warwick'):
     base_url = f'https://api.weatherapi.com/v1'
-    weather_report = requests.get(f'{base_url}/{report_type}.json?key={KEY}&q={location}&aqi=yes')
+    weather_report = requests.get(f"{base_url}/{report_type}.json?key={KEY}"
+                                  f"&q={location}&aqi=yes")
     return weather_report
+
 
 def main():
     console = Console()
 
     parser = argparse.ArgumentParser(
-        usage = 'pwea [location]',
-        description = 'description: pwea is a simple tool used to retrieve current weather weather_reportrmation')
-
+        usage='pwea [location]',
+        description="description: pwea is a simple tool used to retrieve"
+        "current weather weather_reportrmation")
 
     parser.add_argument('location', nargs='+',
-                        help='Input a city name, US/UK/Canadian postal code, IP address, or Latitude / Longitude (in decimal degree)')
+                        help="Input a city name, US/UK/Canadian postal code,"
+                        "IP address, or Latitude / Longitude (in decimal"
+                        "degree)")
 
     args = parser.parse_args()
     location = ' '.join(args.location)
