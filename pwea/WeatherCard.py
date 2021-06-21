@@ -10,8 +10,12 @@ class WeatherCard:
 
     def __init__(self, weather_report):
         self.weather_report = weather_report
-        self.ascii_image = ascii_dict[weather_report['current']['condition']
-                                      ['text'].replace(' ', '_').lower()]
+        if weather_report['current']['is_day']:
+            self.ascii_image = ascii_dict['day'][weather_report['current']['condition']
+            ['text'].replace(' ', '_').lower()]
+        else:
+            self.ascii_image = ascii_dict['night'][weather_report['current']['condition']
+            ['text'].replace(' ', '_').lower()]
         self.display_text = (
             f"[#5fd7d7]{weather_report['location']['name']}, "
             f"{weather_report['location']['region']}, "
