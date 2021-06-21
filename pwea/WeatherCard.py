@@ -41,6 +41,5 @@ class WeatherCard:
 
     def display_weather(self):
 
-        print(self.display_text)
         console = Console()
         console.print(Columns(self.weather_renderables))

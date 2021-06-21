@@ -14,7 +14,6 @@ def get_weather(report_type='current', location='Warwick'):
     base_url = f'https://api.weatherapi.com/v1'
     weather_report = requests.get(f"{base_url}/{report_type}.json?key={KEY}"
                                   f"&q={location}&aqi=yes")
-    print(weather_report.json())
     return weather_report
 
 
