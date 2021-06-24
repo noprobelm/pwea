@@ -10,7 +10,7 @@ Simply pass a desired location for weather location. Acceptable arguments are US
 
 Use it like this:
 
-`pwea springfield massachussets`
+`pwea springfield MA`
 
 ![springfield](pwea.gif)
 
