@@ -12,7 +12,7 @@ Use it like this:
 
 `pwea springfield massachussets`
 
-![springfield](.)
+![springfield](springfield.gif)
 
 # Installation
 
