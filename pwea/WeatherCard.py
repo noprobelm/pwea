@@ -11,19 +11,20 @@ class WeatherCard:
     def __init__(self, weather_report):
         self.weather_report = weather_report
         if weather_report['current']['is_day']:
-            self.ascii_image = ascii_dict['day'][weather_report['current']['condition']
-            ['text'].replace(' ', '_').lower()]
+            self.ascii_image = ascii_dict['day'][weather_report['current']
+            ['condition']['text'].replace(' ', '_').lower()]
         else:
-            self.ascii_image = ascii_dict['night'][weather_report['current']['condition']
-            ['text'].replace(' ', '_').lower()]
+            self.ascii_image = ascii_dict['night'][weather_report['current']
+            ['condition']['text'].replace(' ', '_').lower()]
         self.display_text = (
-            f"[#5fd7d7]{weather_report['location']['name']}, "
+            f"[underline bold][#5fd7d7]{weather_report['location']['name']}, "
             f"{weather_report['location']['region']}, "
-            f"{weather_report['location']['country']}\nThe current time is"
-            f"{weather_report['location']['localtime']}\n\n[underline bold]"
-            f"Weather report (last updated at)"
+            f"{weather_report['location']['country']}[/underline bold]"
+            f"\nThe current time is "
+            f"{weather_report['location']['localtime']}\n\n"
+            f"Weather report (last updated at "
             f"{weather_report['current']['last_updated']})\n\n[/#5fd7d7]"
-            f"[/underline bold] {self.ascii_image}\n[indian_red]"
+            f"{self.ascii_image}\n[indian_red]"
             f"{weather_report['current']['temp_f']}°F "
             f"{weather_report['current']['feelslike_f']}°F), "
             f"{weather_report['current']['condition']['text']}\nHumidity: "
