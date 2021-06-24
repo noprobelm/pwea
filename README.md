@@ -2,7 +2,7 @@
 
 Pwea is a simple weather tool written in Python, utilizing the [Weather API](https://www.weatherapi.com/) to source current weather information.
 
-Pwea uses the [requests](https://docs.python-requests.org/en/master/) and [rich](https://github.com/willmcgugan/rich) libraries.
+Pwea uses the [requests](https://docs.python-requests.org/en/master/) and [rich](https://github.com/willmcgugan/rich) libraries to retrieve and display weather data.
 
 # How it works
 
@@ -12,7 +12,7 @@ Use it like this:
 
 `pwea springfield massachussets`
 
-![springfield](/home/noprobelm/projects/pwea/springfield.gif)
+![springfield](.)
 
 # Installation
 
