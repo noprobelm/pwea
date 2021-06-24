@@ -6,7 +6,7 @@ Pwea uses the [requests](https://docs.python-requests.org/en/master/) and [rich]
 
 # How it works
 
-Simply pass a desired location for weather location. Acceptable arguments are US/Canadian/UK zip code, IP address, latitude/longitude (in decimal degree), or city name. Multiple arguments are acceptable to assist in specifying location.
+Simply pass a desired location for weather data. Acceptable arguments are US/Canadian/UK zip code, IP address, latitude/longitude (in decimal degree), or city name. Multiple arguments are acceptable to assist in specifying location.
 
 Use it like this:
 
@@ -31,4 +31,12 @@ Clone the repository:
 Install using `setuptools`:
 
 `python3 setup.py install`
+
+# Credit
+
+I created this tool for the purpose of self-education. I was originally inspired by the [pwy](https://github.com/clieg/pwy) project.
+
+# License
+
+Copyright © 2021 Jeff Barfield.
 
