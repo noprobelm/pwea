@@ -26,7 +26,7 @@ You can install pwea from PyPi, or build it from source.
 
 Clone the repository:
 
-`git clone git@gitlab.com:jeffreybarfield/pwea.git`
+`git clone https://gitlab.com/jeffreybarfield/pwea.git`
 
 Install using `setuptools`:
 
