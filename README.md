@@ -6,33 +6,30 @@ Pwea uses the [requests](https://docs.python-requests.org/en/master/) and [rich]
 
 # How it works
 
-Pass a desired location to `pwea` to retrieve the current weather information. For forecast information, add `-t forecast` or `--type forecast`. For imperial measurements, use `-u imperial` or `--unit imperial`
+Pass a desired location to `pwea` to retrieve the current weather information. For forecast information, add `-t forecast` or `--type forecast`.
 
 Use it like this:
 
-`pwea springfield MA`
+`pwea new york`
 
-![springfield](current.gif)
+![current](current.gif)
 
-![springfield](forecast.gif)
+![forecast](forecast.gif)
 
 # Installation
 
-You can install pwea from PyPi, or build it from source.
-
-## Pypi
-
-`pip install pwea`
-
-## Building from source
-
-Clone the repository:
+- Clone the repository:
 
 `git clone https://gitlab.com/jeffreybarfield/pwea.git`
 
-Install using `setuptools`:
+- Install using `setuptools`:
 
 `python3 setup.py install`
+
+# Configuration
+
+- Get a free API key from [weatherapi.com](https://www.weatherapi.com/)
+- Configure pwea to run: `pwea --config <YOUR_API_KEY>`, or manually put your key in `~/.config/pwearc`
 
 # Credit
 
