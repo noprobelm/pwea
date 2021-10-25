@@ -10,7 +10,6 @@ def set_renderables(reports):
 
     Returns a nested dict object containing the requested location,
     current weather report, and forecasted weather report.
-
     """
 
     def set_current_renderables(location, report):
@@ -31,10 +30,9 @@ def set_renderables(reports):
         renderables = (
             f"[indian_red]"
             f"[underline][bold]{report['localtime']}[/underline][/bold]\n\n"
-            f"In "
             f"{location['city']}, "
-            f"{location['region']} "
-            f"it is {report['condition'].lower()}.\n\n"
+            f"{location['region']}\n\n"
+            f"{report['condition']}\n\n"
             f"[/indian_red]"
             f"{ascii_renderables[report['condition'].replace(' ', '_').lower()]}\n\n"
             f"[indian_red]"
