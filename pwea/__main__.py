@@ -5,6 +5,7 @@ from pwea.config import set_config, get_config
 from pwea.Weather import CurrentWeather, ForecastWeather
 
 from rich import print
+from rich.panel import Panel
 
 
 def main():
